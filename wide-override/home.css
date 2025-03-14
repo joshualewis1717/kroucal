@@ -1,9 +1,0 @@
-#hero img {
-    object-position: 0% 65%;
-    max-height: calc(99vh - 120px);
-}
-
-
-#hero div {
-    scale: 1.3;
-}
