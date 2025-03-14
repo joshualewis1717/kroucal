@@ -1,0 +1,8 @@
+/* Reset CSS to remove default browser styles, i only reset the elements i used*/
+html, body, div, span, h1, h2, h3, h4, p, figure, ul, main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}

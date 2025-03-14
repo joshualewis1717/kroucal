@@ -1,0 +1,19 @@
+
+
+#hero div {
+    background-color: #ffffffb6;
+}
+
+
+#about {
+    flex-direction:  column;
+
+    img {
+        margin-top: 3vh;
+        height: 30vh;
+        width: 100%;
+        aspect-ratio: none;
+        object-fit: cover;
+    }
+    
+}
