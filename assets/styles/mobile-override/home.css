@@ -15,5 +15,14 @@
         aspect-ratio: none;
         object-fit: cover;
     }
+    #about-text {
+        padding-bottom: 5vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        scale: 1.2;
+
+        
+
+    }
     
 }
