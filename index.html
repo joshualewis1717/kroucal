@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/styles/mobile-override/base.css" media="(max-width: 768px)">
     <link rel="stylesheet" href="assets/styles/wide-override/home.css" media="(min-width: 1440px)">
 
-    <script src="script.js" defer></script>
+    <script src="assets/scripts/home.js" defer></script>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,16 +24,17 @@
     <header>
         <img src="assets/images/menu.svg" alt="Menu">
         
-        <div>
-            <div class="centered-flex"><strong>Kroucal</strong> / Relocation Experts</div>
+        <div id="headerText">
+            <div id="companyName"><strong>Kroucal /</strong> Relocation Experts</div>
             <div id="tel">Tel: 07852-315019</div>
         </div>
     </header>
+
     
     <main>
         <section id="hero">
-            <img src="assets/images/hero.jpg" alt="Westminster Bridge">
-            <div>
+            <img src="assets/images/hero1.jpg" alt="Westminster Bridge">
+            <div id="heroText">
                 <h1>Relocate with<br>Confidence</h1>
                 <p>Your seamless transition to your<br>new home</p>
             </div>
@@ -41,17 +42,38 @@
         </section>
 
         <section id="about">
-            <div id = "about-text">
-                <h2>Kroucal</h2>
-                <h3>Your Relocation Partner</h3>
-                <p>Your dedicated agent committed to simplifying your relocation to London, United Kingdom. We work on your behalf, offering expertise and insights at every step of the buying process. Whether you're searching for your first property, a family home, a lucrative investment property, or a hidden gem in the market, we are here to alleviate the stress of property hunting.</p>
-
+            <div id = "wrapper">
+                <div>
+                    <h2>Kroucal</h2>
+                    <h3>Your Relocation Partner</h3>
+                    <p>Your dedicated agent committed to simplifying your relocation to London, United Kingdom. We work on your behalf, offering expertise and insights at every step of the buying process. Whether you're searching for your first property, a family home, a lucrative investment property, or a hidden gem in the market, we are here to alleviate the stress of property hunting.</p>
+                
+                </div>
+                <img src="assets/images/about-feature.png" alt="modern house with pillow">
+                
+            
             </div>
-            <img src="assets/images/about-feature.png" alt="modern house with pillow">
-            
-            
         </section>
     </main>
+    
+
+    <section id="services"> 
+        <h2>Our Services</h2>
+        <p>We offer personalised property searches, exclusive off-market deals, expert negotiation, and full support to help you buy the best property.</p>
+        <div class="services"> 
+            <div>
+                <img src="assets/images/house.svg" alt="House">
+                <h3>Relocation Services</h3>
+                <p>Our team of experts will help you find the perfect property for your needs.</p>
+            </div>
+            <div>
+                <img src="assets/images/HR.svg" alt="people">
+                <h3>HR Services</h3>
+                <p>Our team will manage your property, ensuring it is well maintained and looked after.</p>
+            </div>
+        </div>
+
+    </section>
 
     <section style="margin: 10vw;">
         <h2>to do</h2>
@@ -60,7 +82,12 @@
         <br>add in other imformative sections
         <br>make relocation services page, hr services page
         <br>add in a section with links to the other pages
-    </section>
+
+        <br><a href = "https://www.svgrepo.com/svg/511018/house-01" target = "_blank">credit house svg</a>
+    
+        <br><a href = "https://www.svgrepo.com/svg/418842/community-group-leader" target = "_blank">credit hr svg</a>
+
+    </section>  
 
     <footer>
         <h2>Email / Call Us</h2>

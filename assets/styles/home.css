@@ -1,70 +1,154 @@
-main section{
-    margin-left: 10vw;
+section {
+    padding: 10vh;
 }
-
 
 #hero {
     display: flex;
     justify-content: end;
     position: relative;
+    padding: 0;
     
     img {
         width: 100%;
-        height: 100%;
-        object-position: 25% 75%;
-        max-height: calc(99vh - 120px - 120px);
+        aspect-ratio: auto;
         object-fit: cover;
+        object-position: top;
+        max-height: calc(100vh);
     }
 
     div {
         position: absolute;
-        left: 10%;
-        text-align: center;
-        margin: 4vw 5vw;
-        text-align: left;
-        border-radius: 2vh;
-        padding: 10px;
-        text-shadow: #FFFFFF 0px 0px 60px;
-       
-
-        h1 {
-            line-height: 1.2;
-        }
-
-        p {
-            font-weight: 500;
-        }
+        left: 20%;
+        top: calc(100px + 1vw);
+        background-color: #ffffffb9;
+        border-radius: 5vh;
+        transform: translateY(-20%);
+        opacity: 0;
+        padding: 3vh;
+        transition: transform 0.7s, opacity 2s, background-color 1s ease-in;
     }
 }
 
 #about {
     display: flex;
-    padding: 50px;
-    padding-left: 0;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
+    justify-content: center;
+    
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3vw; 
+        width: 100%;
+        max-width: 1270px;
+    }
 
-    #about-text {
-        padding: 50px;
-        padding-left: 5vw;
-        scale: 1.2;
-
-        p {
-            margin-top: 2em;
-            max-width: 400px;
-        }
-
+    p {
+        text-align: justify;
     }
     
     img {
-        height: 60vh;
-        width: auto;
-        aspect-ratio: 0.8;
+        width: 30%;
+        height: 100%;
         object-fit: cover;
+    } 
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    background-color: #0A182E;
+    text-align: center;
+    align-items: center;
+
+
+    * {color: #FFFFFF;}
+
+    p {
+        margin-bottom: 4vh;
     }
     
+
+    .services {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1024px;
+
+        div {
+            padding: 5vh;
+            overflow: hidden;
+            transition: background-color 0.3s, box-shadow 0.4s;
+            border-radius: 3vh;
+            width: 40%;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            img {
+                height: 20vh;
+                width: 40%;
+            }
+        }
+    }
+
+    .services div:hover {
+        background-color: #0b1e3a;
+        box-shadow: 0px 0px 20px 0px #050e1b;
+        img {
+            scale: 1.1;
+        }
+    }
 }
+
+
+/*
+
+
+#services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+
+    * {color: #FFFFFF;}
+
+    h2, p , h3 {
+        margin-bottom: 20px;
+    }
+
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1%;
+        justify-content: space-between;
+        max-width: 1024px;
+        
+    
+        div {
+            width: 29%;
+            border-radius: 3vh;
+            padding: 5vh 1%;
+            img {
+                width: 50%;
+                margin: 1vh;
+                transition: transform 0.35s;
+            }
+        }
+    }
+
+    .services div:hover {
+        background-color: #0b1e3a;
+        box-shadow: 0px 0px 20px 0px #050e1b;
+        img {
+            scale: 1.1;
+        }
+    }
+
+}*/
+
+
 
 footer {
     background-color: #0A182E;
@@ -73,7 +157,7 @@ footer {
     box-sizing: border-box;
     
 
-    * {color: #FFFFFF;}
+    h2, p, a {color: #FFFFFF;}
 
     a {
         text-decoration: underline;
@@ -86,5 +170,37 @@ footer {
 
     #copyright {
         margin-top:15px;
+    }
+}
+
+
+/* Mobile override */
+@media (max-width: 768px) {
+    #hero div{
+        background-color: rgba(255, 255, 255, 0.61);
+        right: 50%;
+        top: 80px;
+    }
+
+    #about {
+        padding: 5vh;
+    
+        #wrapper {
+            flex-direction: column;
+            gap: 2vh; 
+        }
+    
+        img {
+            width: 100%;
+        }
+    
+        
+    }
+}
+
+/* Superwide override */
+@media (min-width: 1440px) {
+    #hero div {
+        background-color: #ffffff00;
     }
 }
