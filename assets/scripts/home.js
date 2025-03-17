@@ -21,19 +21,12 @@ function onResize(){
         tel.style.visibility = 'visible';
     }  else {                                               // If scrolled down
         header.style.height= '50px';
+        header.style.backgroundColor = '#FFFFFFFF';
+        header.style.borderBottom = "1px solid #D3D3D3";
         name.style.transform = "translateY(0)";
         tel.style.opacity = '0';
         tel.style.visibility = 'hidden';
-
-        if (window.scrollY < window.innerHeight) {
-            const scrollFraction = window.scrollY / window.innerHeight;
-            
-            header.style.borderBottom = "1px solid " + lerpColor('#00A1E4', '#D3D3D3', scrollFraction);
-            header.style.backgroundColor = lerpColor('#0A9ED4', '#FFFFFF', scrollFraction);
-        } else {
-            header.style.backgroundColor = '#FFFFFFFF';
-            header.style.borderBottom = "1px solid #D3D3D3";
-        }
+        
     }
 }
 

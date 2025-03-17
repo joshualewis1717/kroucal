@@ -176,15 +176,18 @@ footer {
 
 /* Mobile override */
 @media (max-width: 768px) {
+    section {
+        padding: 5vh;
+    }
+
     #hero div{
         background-color: rgba(255, 255, 255, 0.61);
         right: 50%;
         top: 80px;
+        width: 50%;
     }
 
     #about {
-        padding: 5vh;
-    
         #wrapper {
             flex-direction: column;
             gap: 2vh; 
@@ -193,10 +196,18 @@ footer {
         img {
             width: 100%;
         }
-    
-        
+    }
+
+   
+    #services .services{
+        flex-direction: column;
+        div {
+            box-sizing: border-box;
+            width: 100%;  
+        }
     }
 }
+
 
 /* Superwide override */
 @media (min-width: 1440px) {
