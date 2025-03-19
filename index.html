@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/styles/wide-override/home.css" media="(min-width: 1440px)">
 
     <script src="assets/scripts/home.js" defer></script>
+    <script src="assets/scripts/headerButton.js" defer></script>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,14 +24,24 @@
 <body>
     <header>
         <img src="assets/images/menu.svg" alt="Menu">
-        
         <div id="headerText">
             <div id="companyName"><strong>Kroucal /</strong> Relocation Experts</div>
             <div id="tel">Tel: 07852-315019</div>
         </div>
     </header>
 
-    
+    <nav>
+        <div>
+            <h2>Menu</h2>
+            <img src = "assets/images/close.svg" alt="close" id = "close">
+        </div>
+        <ul>
+            <li><button style = "background-color: #000d33;color: white;">Home</button></li>
+            <li><a href="/relocation-services/"><button>Relocation Services</button></a></li>
+            <li><a href="/hr-services/"><button>HR Services</button></a></li>
+        </ul>
+    </nav>
+
     <main>
         <section id="hero">
             <img src="assets/images/hero1.jpg" alt="Westminster Bridge">
@@ -47,7 +58,8 @@
                     <h2>Kroucal</h2>
                     <h3>Your Relocation Partner</h3>
                     <p>Your dedicated agent committed to simplifying your relocation to London, United Kingdom. We work on your behalf, offering expertise and insights at every step of the buying process. Whether you're searching for your first property, a family home, a lucrative investment property, or a hidden gem in the market, we are here to alleviate the stress of property hunting.</p>
-                
+                    <img src = "assets/images/socialBar.png">
+                    <br>*this social bar is just an image, real one will be done later
                 </div>
                 <img src="assets/images/about-feature.png" alt="modern house with pillow">
                 
@@ -60,19 +72,28 @@
     <section id="services"> 
         <h2>Our Services</h2>
         <p>We offer personalised property searches, exclusive off-market deals, expert negotiation, and full support to help you buy the best property.</p>
-        <div class="services"> 
-            <div>
-                <img src="assets/images/house.svg" alt="House">
-                <h3>Relocation Services</h3>
-                <p>Our team of experts will help you find the perfect property for your needs.</p>
-            </div>
-            <div>
-                <img src="assets/images/HR.svg" alt="people">
-                <h3>HR Services</h3>
-                <p>Our team will manage your property, ensuring it is well maintained and looked after.</p>
-            </div>
+        <div class="services">
+            <a href="/relocation-services/">
+                
+                    <img src="assets/images/house.svg" alt="House">
+                    <h3>Relocation Services</h3>
+                    <p>Our team of experts will help you find the perfect property for your needs.</p>
+                
+            </a>
+            <a href="/hr-services/">
+                
+                    <img src="assets/images/HR.svg" alt="people">
+                    <h3>HR Services</h3>
+                    <p>Our team will manage your property, ensuring it is well maintained and looked after.</p>
+                
+            </a>
         </div>
 
+    </section>
+
+    <section id="why-to-buy-now">
+        <h2>Why now is the right time to buy.</h2>
+        <p>It's natural to feel hesitant about entering the property market during uncertain times. However what is expensive today is tomorrows bargain. Waiting could mean missing out on a unique opportunity that would not be available later.<br><br>We help you navigate current market conditions to make informed decisions that align with your long-term objectives.</p>
     </section>
 
     <section style="margin: 10vw;">

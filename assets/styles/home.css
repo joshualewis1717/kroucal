@@ -1,5 +1,6 @@
 section {
     padding: 10vh;
+    border-bottom: 1px solid rgb(122, 122, 122);
 }
 
 #hero {
@@ -7,6 +8,8 @@ section {
     justify-content: end;
     position: relative;
     padding: 0;
+    overflow: hidden;
+    
     
     img {
         width: 100%;
@@ -21,25 +24,36 @@ section {
         left: 20%;
         top: calc(100px + 1vw);
         background-color: #ffffffb9;
-        border-radius: 5vh;
-        transform: translateY(-20%);
-        opacity: 0;
+        border-end-end-radius: 5vh;
+        border-start-start-radius: 5vh;
+        transform: translate(-20%, 0);
+        opacity: 1;
         padding: 3vh;
-        transition: transform 0.7s, opacity 2s, background-color 1s ease-in;
+        transition: opacity 2s, background-color 1s ease-in;
     }
 }
 
 #about {
     display: flex;
     justify-content: center;
-    
+
     #wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 3vw; 
         width: 100%;
-        max-width: 1270px;
+        max-width: 1470px;
+        div {
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+            img {
+                width: unset;
+                height: 60px;
+                object-fit: unset;
+                min-width: unset;
+            }
+        }
     }
 
     p {
@@ -50,13 +64,14 @@ section {
         width: 30%;
         height: 100%;
         object-fit: cover;
+        min-width: 35%;
     } 
 }
 
 #services {
     display: flex;
     flex-direction: column;
-    background-color: #0A182E;
+    background-color: #001143;
     text-align: center;
     align-items: center;
 
@@ -73,9 +88,12 @@ section {
         flex-direction: row;
         justify-content: space-between;
         max-width: 1024px;
+        gap: 1vw;
 
-        div {
+        a {
+            text-decoration: none;
             padding: 5vh;
+            border: 0.1px #7e7e7e solid;
             overflow: hidden;
             transition: background-color 0.3s, box-shadow 0.4s;
             border-radius: 3vh;
@@ -88,12 +106,13 @@ section {
             img {
                 height: 20vh;
                 width: 40%;
+                transition: scale 0.2s;
             }
         }
     }
 
-    .services div:hover {
-        background-color: #0b1e3a;
+    .services a:hover {
+        border: 0.5px #FFF solid;
         box-shadow: 0px 0px 20px 0px #050e1b;
         img {
             scale: 1.1;
@@ -101,53 +120,19 @@ section {
     }
 }
 
-
-/*
-
-
-#services {
+#why-to-buy-now {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    
-
-    * {color: #FFFFFF;}
-
-    h2, p , h3 {
-        margin-bottom: 20px;
+    padding: 20vh 15vw;
+    gap: 10vw;
+    h2 {
+        flex: 1;
+        font-weight: 450;
+        font-size: 3rem;
     }
-
-    .services{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1%;
-        justify-content: space-between;
-        max-width: 1024px;
-        
-    
-        div {
-            width: 29%;
-            border-radius: 3vh;
-            padding: 5vh 1%;
-            img {
-                width: 50%;
-                margin: 1vh;
-                transition: transform 0.35s;
-            }
-        }
+    p {
+        flex: 2;
     }
-
-    .services div:hover {
-        background-color: #0b1e3a;
-        box-shadow: 0px 0px 20px 0px #050e1b;
-        img {
-            scale: 1.1;
-        }
-    }
-
-}*/
-
+}
 
 
 footer {
@@ -181,16 +166,20 @@ footer {
     }
 
     #hero div{
-        background-color: rgba(255, 255, 255, 0.61);
-        right: 50%;
-        top: 80px;
-        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.7s, opacity 2s, background-color 1s ease-in;
     }
 
     #about {
         #wrapper {
             flex-direction: column;
-            gap: 2vh; 
+            gap: 2vh;
+            div {
+                margin: 2vh;
+            }
         }
     
         img {
@@ -201,12 +190,41 @@ footer {
    
     #services .services{
         flex-direction: column;
-        div {
+        a {
             box-sizing: border-box;
             width: 100%;  
         }
     }
+
+    #why-to-buy-now {
+        flex-direction: column;
+        padding: 10vh;
+    }
 }
+
+/* even smaller mobile override */
+@media (max-width: 520px) {
+    
+    #hero div {
+        top: 60%;
+        padding: 2vh;
+        border-end-end-radius: 2vh;
+        border-start-start-radius: 2vh;
+    }
+
+    #hero h1{
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    #hero p{
+        font-size: 0.8rem;
+        padding: 0;
+    }
+
+    
+}
+
 
 
 /* Superwide override */
