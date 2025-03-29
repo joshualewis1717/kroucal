@@ -1,0 +1,23 @@
+section {
+    margin: 4vh;
+    margin-bottom: 0;
+    padding: 10vh;
+    border-radius: 3vh;
+    outline: 1px solid #333;
+}
+
+.bottomDiv{
+    margin-bottom: 4vh;
+}
+
+.titleDiv{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+    section{
+        padding: 5vh;
+    }
+}

@@ -9,12 +9,7 @@
     <link rel="stylesheet" href="assets/styles/base.css">
     <link rel="stylesheet" href="assets/styles/home.css">
 
-    <link rel="stylesheet" href="assets/styles/mobile-override/home.css" media="(max-width: 768px)">
-    <link rel="stylesheet" href="assets/styles/mobile-override/base.css" media="(max-width: 768px)">
-    <link rel="stylesheet" href="assets/styles/wide-override/home.css" media="(min-width: 1440px)">
-
-    <script src="assets/scripts/home.js" defer></script>
-    <script src="assets/scripts/headerButton.js" defer></script>
+    <script src="assets/scripts/dynamicNav.js" defer></script>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +42,7 @@
             <img src="assets/images/hero1.jpg" alt="Westminster Bridge">
             <div id="heroText">
                 <h1>Relocate with<br>Confidence</h1>
-                <p>Your seamless transition to your<br>new home</p>
+                <p class="hero-tagline-remover">Your seamless transition to your new home</p>
             </div>
             
         </section>
@@ -58,8 +53,7 @@
                     <h2>Kroucal</h2>
                     <h3>Your Relocation Partner</h3>
                     <p>Your dedicated agent committed to simplifying your relocation to London, United Kingdom. We work on your behalf, offering expertise and insights at every step of the buying process. Whether you're searching for your first property, a family home, a lucrative investment property, or a hidden gem in the market, we are here to alleviate the stress of property hunting.</p>
-                    <img src = "assets/images/socialBar.png">
-                    <br>*this social bar is just an image, real one will be done later
+                    <!--img src = "assets/images/socialBar.png"--> 
                 </div>
                 <img src="assets/images/about-feature.png" alt="modern house with pillow">
                 
@@ -112,9 +106,9 @@
 
     <footer>
         <h2>Email / Call Us</h2>
-        <p class="desktop-only">Tel: 07852-315019</p>
-        <p class="mobile-only">Tel: <a href="tel:+447852315019">07852-315019</a></p>
-        <p>Email: <a href="mailto:laura@kroucal.com">laura@kroucal.com</a></p>
+        <p id="email">Email: <a href="mailto:laura@kroucal.com">laura@kroucal.com</a></p>
+        <p id="telephone" class="desktop-only">Tel: 07852-315019</p>
+        <p id="telephone" class="mobile-only">Tel: <a href="tel:+447852315019">07852-315019</a></p>
         <p id="copyright">&copy; 2025 Kroucal Ltd</p>
         <p id="credit"style="font-size: 0.8em; opacity: 0.6;">Website by <a href="http://lewiscoding.co.uk/" target="_blank">Joshua Lewis</a></p>
     </footer>

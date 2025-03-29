@@ -3,6 +3,12 @@ section {
     border-bottom: 1px solid rgb(122, 122, 122);
 }
 
+header {
+    position: absolute;
+    border-bottom: none;
+    background-color: #FFFFFF00;
+}
+
 #hero {
     display: flex;
     justify-content: end;
@@ -21,15 +27,25 @@ section {
 
     div {
         position: absolute;
-        left: 20%;
-        top: calc(100px + 1vw);
+        margin-left: 15vw;
+        margin-top: calc(80px + 1vw);
+        left: 0;
+        top: 0;
         background-color: #ffffffb9;
+        /*background-color: #2a74d4ce;*/
+        
         border-end-end-radius: 5vh;
         border-start-start-radius: 5vh;
-        transform: translate(-20%, 0);
         opacity: 1;
         padding: 3vh;
         transition: opacity 2s, background-color 1s ease-in;
+        
+        h1{
+            font-size: calc(0.5rem + 3vw);
+        }
+        p{
+            font-size: calc(0.5rem + 1vw);
+        }
     }
 }
 
@@ -87,7 +103,7 @@ section {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        max-width: 1024px;
+        max-width: 1440px;
         gap: 1vw;
 
         a {
@@ -135,42 +151,13 @@ section {
 }
 
 
-footer {
-    background-color: #0A182E;
-    padding: 10vw;
-    padding-bottom: 15vh;
-    box-sizing: border-box;
-    
 
-    h2, p, a {color: #FFFFFF;}
-
-    a {
-        text-decoration: underline;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-
-    #copyright {
-        margin-top:15px;
-    }
-}
 
 
 /* Mobile override */
 @media (max-width: 768px) {
     section {
         padding: 5vh;
-    }
-
-    #hero div{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        transition: transform 0.7s, opacity 2s, background-color 1s ease-in;
     }
 
     #about {
@@ -205,12 +192,7 @@ footer {
 /* even smaller mobile override */
 @media (max-width: 520px) {
     
-    #hero div {
-        top: 60%;
-        padding: 2vh;
-        border-end-end-radius: 2vh;
-        border-start-start-radius: 2vh;
-    }
+    
 
     #hero h1{
         font-size: 1rem;
@@ -232,4 +214,8 @@ footer {
     #hero div {
         background-color: #ffffff00;
     }
+}
+
+@media (max-width:500px) {
+    .hero-tagline-remover {display: none;}
 }
