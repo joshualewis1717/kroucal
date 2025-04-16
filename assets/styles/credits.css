@@ -1,0 +1,42 @@
+.asset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.asset-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: box-shadow 0.2s;
+    background-color: #fff;
+    color: #000;
+}
+
+.asset-card:hover {
+    box-shadow: 0 10px 8px rgba(0,0,0,0.1);
+    
+}
+
+.asset-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.asset-card h3 {
+    margin: 0.25rem 0;
+    font-size: 1.1rem;
+}
+
+.asset-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.75;
+}

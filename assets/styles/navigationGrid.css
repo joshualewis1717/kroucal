@@ -1,0 +1,46 @@
+.asset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.asset-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5vh;
+    padding: 3vh;
+    transition: box-shadow 0.2s;
+    background-color: #fff;
+    color: #000;
+    overflow: hidden;
+    text-align: center;
+
+    h2{
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+
+    img {
+        width: 70%;
+        aspect-ratio: 1;
+        object-fit: contain;
+        margin-bottom: 2vh;
+    }
+}
+
+.asset-card:hover {
+    box-shadow: 0 0px 15px rgba(0,0,0,0.2);
+}
+
+
+#navigation-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh 10vh;
+}

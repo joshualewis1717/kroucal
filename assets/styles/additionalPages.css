@@ -1,9 +1,10 @@
 section {
-    margin: 4vh;
+    margin: 5vh;
     margin-bottom: 0;
-    padding: 10vh;
+    padding: 3vh 5vh;
     border-radius: 3vh;
     outline: 1px solid #333;
+    zoom: 0.8;
 }
 
 .bottomDiv{
@@ -15,9 +16,3 @@ section {
     padding-bottom: 3vh;
 }
 
-/* Mobile override */
-@media (max-width: 768px) {
-    section{
-        padding: 5vh;
-    }
-}

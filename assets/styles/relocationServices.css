@@ -1,0 +1,28 @@
+.twoContent {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+.twoContentChild {
+    display: flex;
+    flex-direction: column;
+}
+
+.featureOutline {
+    padding: 1vh 2vh;
+    border-radius: 2vh;
+    outline: 1px solid #333;
+}
+
+#area-familiarisation {
+    p {
+        justify-content: center;
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+}
+
+
